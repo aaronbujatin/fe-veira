@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as Aos from 'aos';
 import { initFlowbite } from 'flowbite';
 
 @Component({
@@ -10,5 +11,6 @@ export class AppComponent {
   title = 'fe-veira';
   ngOnInit(): void {
     initFlowbite();
+    Aos.init();
   }
 }
